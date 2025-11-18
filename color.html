@@ -1,29 +1,44 @@
-<!--SN 6th Color Practice-->
+
+<!--SN 6th Color HTML Practice-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title> Styling with Color</title>
+    <title>Color Theory Practice</title>
     <meta charset="UTF-8">
     <style>
-        div{
-            height:200px;
+        .box {
+            height: 200px;
             width: 200px;
+            margin: 20px;
             text-align: center;
-            background-color: blueviolet;
-        }
+            padding-top: 80px;
+            font-size: 20px;
+            font-weight: bold;
+            display: inline-block;
+}
 
+#analogous {
+    background-color: yellow;
+    color: green;
+    border: 5px solid yellowgreen;
+}
 
+#complementary {
+    background-color: blue;
+    color: orange;
+    border: 5px solid orange;
+}
+
+#triadic {
+    background-color: red;
+    color: yellow;
+    border: 5px solid blue;
+}
     </style>
 </head>
     <body>
-        <div id="analogous">
-        <p>Analagous</p>
-    </div>
-    <div id="complementary">
-        <p>complementary</p>
-    </div>
-    <div id="triadic">
-        <p>triadic</p>
-
+        <div class="box" id="analogous">Analogous</div>
+        <div class="box" id="complementary">Complementary</div>
+        <div class="box" id="triadic">Triadic</div>
 </body>
 </html>
