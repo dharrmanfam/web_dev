@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS</title>
+    <style>
+        img{
+            height: 150px;
+            width: auto;
+        }
+        #left{
+            width: 50vw;
+        }
+        #right{
+            width: 50vw;
+            margin: 3px;
+        }
+        #content wrapper{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+        }
+        button{
+            margin:50px;
+            padding: 50px;
+        }
+        #one-wrapper{
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+            flex-wrap: wrap;
+
+        }
+        
+        p{
+            font-family:serif;
+            font-size: 10px;
+            font-style: oblique;
+            font-weight: 800;
+            font-variant: small-caps;
+        }
+    </style>
+</head>
+<body>
+    <h1>Title</h1>
+    <button>click me</button>
+    <div id="content-wrapper">
+    <div id="left">
+    <p> I dont know</p>
+    </div>
+    <div id="right">
+        <img id="one-wrapper" alt="faces" src = "https://play-lh.googleusercontent.com/hsTNPqGmXfeFXwJsb4Y4nOSFRw0ilfApYJhJBXcM_Cmtoq3RhCHawAY3nxKwf5VhDHo">
+        <img id="two" alt="koro sensei" src = "https://play-lh.googleusercontent.com/hsTNPqGmXfeFXwJsb4Y4nOSFRw0ilfApYJhJBXcM_Cmtoq3RhCHawAY3nxKwf5VhDHo">
+        <img id= "three" alt="reading" src = "https://play-lh.googleusercontent.com/hsTNPqGmXfeFXwJsb4Y4nOSFRw0ilfApYJhJBXcM_Cmtoq3RhCHawAY3nxKwf5VhDHo">
+    </div>
+</body>
+</html>
+
+
+<!--
+What can you change about a font?
+    You can change various aspects of a font like size, the family, style, weight, or variant 
+    to control its appearance. Varying from the whole page, individual elements to specific sections.
+
+Why would you put more than one font family?
+    If that font is not available on the user's system or not supported by their browser, it can then try the next font in the list.
+
+What is the difference between the 5 generic font categories? 
+    They are the five generic font categories are Serif, Sans-serif, Monospace, Cursive, and Fantasy.
+        serif: not fancy
+        sans-serif: fancy
+        monospace: more simple
+        cursive: looks like handwriting
+        fantasy: blocky
+
+How do you write 2 word font names?
+    By typing the full name with a space between the words
+
+Where can you import fonts from? 
+    From other websites like google fonts, dafont, and font squirrel.
+
+How can you import a font?
+    By downloading the font file, extracting it if it's in a compressed folder, and then right-clicking the font file to select and paste.
+    You can also add a link inside the non-styled directions to another file that has the styles for the computer to extract the info.
+
+ What is margin?
+    It gives space around the outside of an item.
+
+What is padding?
+    The area inside an item. It pushes out from the center.
+
+How do you align items without CSS Grid or Flexbox?
+    By using margin and padding.
+
+What is CSS Grid?
+
+Why is it used?
+
+How do you set up CSS Grid?
+
+What is flexbox?
+
+Why is it used?
+
+How do you set up Flexbox? 
+
+-->
