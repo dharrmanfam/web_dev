@@ -1,1 +1,83 @@
 <!--SN Hidden Image Webpage-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Golden Retrievers</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        padding: 20px;
+        line-height: 1.6;
+    }
+
+    .dog-img {
+        width: 300px;
+        display: block;
+        margin-bottom: 20px;
+        border-radius: 10px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    /* Hidden image trigger box */
+    .secret-box {
+        width: 220px;
+        height: 50px;
+        background-color: #f0d78c;
+        margin: 30px auto; /* centered */
+        padding: 10px;
+        text-align: center;
+        border-radius: 8px;
+        cursor: pointer;
+        font-weight: bold;
+    }
+
+    .hidden-img {
+        width: 250px;
+        display: none; /* hidden at first */
+        margin: 10px auto; /* centered */
+        border-radius: 8px;
+    }
+
+    /* Reveal hidden image on hover */
+    .secret-box:hover + .hidden-img {
+        display: block;
+    }
+</style>
+</head>
+<body>
+
+<h1>All About Golden Retrievers</h1>
+
+<p>
+Golden Retrievers are one of the most friendly, loving, and intelligent dog breeds in the world. 
+They are known for their gentle personalities and strong desire to please their owners. 
+Because of their patience and calm behavior, they make excellent family pets.
+</p>
+
+<p>
+Goldens are also highly trainable, which is why many of them work as service dogs,
+therapy dogs, and search-and-rescue helpers. Their loyalty and warm nature make them
+one of the most popular dog breeds globally.
+</p>
+
+<img class="dog-img" src="https://thumbs.dreamstime.com/b/golden-retriever-mother-three-adorable-puppies-lies-soft-fabric-her-fluffy-387986268.jpg" alt="Golden Retriever">
+
+<h2>Why People Love Golden Retrievers</h2>
+<ul>
+    <li>They are friendly and gentle</li>
+    <li>Very smart and easy to train</li>
+    <li>Great with kids and families</li>
+    <li>Make excellent service and therapy dogs</li>
+    <li>Playful and energetic companions</li>
+</ul>
+
+<!-- Secret spot to reveal image -->
+<div class="secret-box">Hover your mouse here for a cute surprise</div>
+
+<!-- Hidden image -->
+<img class="hidden-img" src="https://www.petplace.com/article/dogs/pet-care/dog-care/puppy-care/media_16e89029edcc85076147cda767a7cd26d98767af3.png?width=750&format=png&optimize=medium" alt="Hidden Golden Retriever Puppy">
+
+</body>
+</html>
