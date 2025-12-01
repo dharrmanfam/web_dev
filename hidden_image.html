@@ -1,4 +1,5 @@
 <!--SN Hidden Image Webpage-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,32 +17,44 @@
         display: block;
         margin-bottom: 20px;
         border-radius: 10px;
-        margin-left: auto;
-        margin-right: auto;
+        float: left;
+        margin-right: 20px;
     }
 
-    /* Hidden image trigger box */
-    .secret-box {
-        width: 220px;
-        height: 50px;
-        background-color: #f0d78c;
-        margin: 30px auto; /* centered */
-        padding: 10px;
+    h1, h2, p {
+        width: 100%;
+        max-width: 700px;
         text-align: center;
-        border-radius: 8px;
+        clear: both;
+    }
+
+    ul {
+        padding-left: 0;
+        margin-left: 0;
+        text-align: left;
+        list-style-position: inside;
+        max-width: 700px;
+    }
+    .secret-container {
+        position: fixed;  
+        top: 10px;        
+        right: 10px;       
+        width: 100px;      
+        height: 100px;
+        z-index: 1000;     
         cursor: pointer;
-        font-weight: bold;
     }
 
     .hidden-img {
         width: 250px;
-        display: none; /* hidden at first */
-        margin: 10px auto; /* centered */
-        border-radius: 8px;
+        display: none;      
+        position: fixed;    
+        top: 20px;
+        right: 20px;       
+        border-radius: 10px;
     }
 
-    /* Reveal hidden image on hover */
-    .secret-box:hover + .hidden-img {
+    .secret-container:hover .hidden-img {
         display: block;
     }
 </style>
@@ -51,20 +64,24 @@
 <h1>All About Golden Retrievers</h1>
 
 <p>
-Golden Retrievers are one of the most friendly, loving, and intelligent dog breeds in the world. 
-They are known for their gentle personalities and strong desire to please their owners. 
-Because of their patience and calm behavior, they make excellent family pets.
+Golden Retrievers are one of the most popular dog breeds in the world due to their friendly and gentle nature. 
+They are known for being intelligent, loyal, and easy to train, which makes them ideal family pets. 
+Goldens have a calm temper, but they also enjoy playtime and exercise, making them great companions for active households. 
+Their patience and kindness make them especially good with children and other pets. 
+In addition to being loving family dogs, they are often chosen as therapy and service dogs because of their flexible personalities.
 </p>
 
 <p>
-Goldens are also highly trainable, which is why many of them work as service dogs,
-therapy dogs, and search-and-rescue helpers. Their loyalty and warm nature make them
-one of the most popular dog breeds globally.
+These dogs have a thick, water-resistant coat that ranges from light cream to deep golden, which requires regular grooming to stay healthy. 
+Golden Retrievers are highly social animals and thrive when they have regular interaction with their families and other dogs. 
+They are also very active and enjoy outdoor activities like swimming, fetching, and hiking. 
+Their intelligence and eagerness to please make training enjoyable, even if they need consistent and repeated guidance.
+Overall, Golden Retrievers are affectionate, versatile, and dependable pets, making them a perfect choice for families, individuals, and organizations alike.
 </p>
 
 <img class="dog-img" src="https://thumbs.dreamstime.com/b/golden-retriever-mother-three-adorable-puppies-lies-soft-fabric-her-fluffy-387986268.jpg" alt="Golden Retriever">
 
-<h2>Why People Love Golden Retrievers</h2>
+<h2>Why Golden Retrievers?</h2>
 <ul>
     <li>They are friendly and gentle</li>
     <li>Very smart and easy to train</li>
@@ -73,11 +90,11 @@ one of the most popular dog breeds globally.
     <li>Playful and energetic companions</li>
 </ul>
 
-<!-- Secret spot to reveal image -->
-<div class="secret-box">Hover your mouse here for a cute surprise</div>
-
-<!-- Hidden image -->
-<img class="hidden-img" src="https://www.petplace.com/article/dogs/pet-care/dog-care/puppy-care/media_16e89029edcc85076147cda767a7cd26d98767af3.png?width=750&format=png&optimize=medium" alt="Hidden Golden Retriever Puppy">
+<div class="secret-container">
+    <img class="hidden-img" 
+         src="https://www.petplace.com/article/dogs/pet-care/dog-care/puppy-care/media_16e89029edcc85076147cda767a7cd26d98767af3.png?width=750&format=png&optimize=medium" 
+         alt="Hidden Golden Retriever Puppy">
+</div>
 
 </body>
 </html>
