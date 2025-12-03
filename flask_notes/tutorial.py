@@ -14,7 +14,7 @@ def contact():
 
 @app.route("/<name>")
 def user(name):
-    return f"<h1> Hello, {name}!</h1>"
+    return render_template("user.html")
 
 if __name__== "__main__":
     app.run(debug=True)
@@ -22,8 +22,8 @@ if __name__== "__main__":
 #What does Flask do?
     #It creates a web that includes multiple pages.
 #What are the steps to setting up a Flask project?
-    #
+    #Set the flask library and add the elements wanted inside.
 #How can you reference subpages on your Flask project? (Meaning the difference between the home page and a personal profile)
-    #
-#What are templates
-    #
+    #By defining routes for them in the python file to link them.
+#What are templates?
+    #Templates are how you redirect websites to subpages.
