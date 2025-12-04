@@ -1,21 +1,170 @@
+<!--SN 6th Final Staycation-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Moab at Utah</title>
+    <title>Explore Moab, Utah</title>
+
     <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: #f2e9d8;
+            color: #432818;
+            font-family: "Trebuchet MS", Arial, sans-serif;
+        }
+
+        header {
+            background-color: #bc6c25;
+            color: white;
+            text-align: center;
+            padding: 30px;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        header h1 {
+            font-size: 2.3em;
+            letter-spacing: 2px;
+            margin: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            gap: 25px;
+            padding: 20px;
+            max-width: 1000px;
+            margin: auto;
+        }
+
+        .image-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+        }
+
+        .image-grid img {
+            width: 100%;
+            border-radius: 10px;
+            transition: transform 0.3s;
+        }
+
+        .image-grid img:hover {
+            transform: scale(1.08);
+        }
+
+        #hoverImg:hover {
+            transform: none;
+        }
+
+        ul {
+            background-color: #faedcd;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        #extraContent {
+            display: none; 
+            background-color: #e9d8a6;
+            padding: 20px;
+            border-radius: 10px;
+            margin-top: 20px;
+        }
+
+        button {
+            background-color: #bc6c25;
+            color: white;
+            border: none;
+            padding: 12px 18px;
+            font-size: 16px;
+            cursor: pointer;
+            border-radius: 8px;
+        }
+
+        button:hover {
+            background-color: #995120;
+        }
     </style>
-    </head>
+</head>
 
-    <body>
-        <h1  id="first">Wondering Where to Go for an Easy but Eventful Trip?</h1>
-        <h2>Activities</h2>
-        <p>This is for <u> a paragraph <br> </p>
-        <p><span> id="first">Lorem ipsumuhv <strong> csiubibi.<p></span>
-        <a href="https://ucas-edu.instructure.com/courses/4535/assignments/86018?module_item_id=179677" targtet="_blank"> This is a link</a>
-    </body>
+<body>
+
+<header>
+    <h1>Explore Moab, Utah</h1>
+</header>
+
+<div class="container">
+
+    <p>
+        Moab, Utah is one of the most breathtaking outdoor destinations in the entire country.
+        Its glowing red rock formations, natural arches, and massive canyons make it a place travelers come from
+        all over the world to experience. Whether you're hiking through famous national parks or watching the sun light up
+        the cliffs at sunset, Moab offers unforgettable adventure and beauty.
+    </p>
+
+    <h2>Why the Moab?</h2>
+
+    <ul>
+        <li>Home to Arches and Canyonlands National Parks</li>
+        <li>World-famous hiking, climbing, and mountain biking trails</li>
+        <li>Unmatched desert sunsets and incredible stargazing</li>
+        <li>Unique red rock landscapes found nowhere else on Earth</li>
+    </ul>
+
+    <div class="image-grid">
+
+        <img src="https://visitfourcorners.com/wp-content/uploads/2024/01/Arches-National-Park-A-1024x572.webp"
+             alt="Arches National Park">
+
+        <img id="hoverImg"
+             src="https://www.moabspringsranch.com/Content/images/Canyonlandspark.jpg"
+             alt="Canyonlands National Park"
+             style="width:100%; border-radius:10px;">
+
+        <img src="https://www.ulumresorts.com/app/uploads/2024/01/shutterstock_1164019927-1920x1080.jpg"
+             alt="Moab Desert Landscape">
+    </div>
+
+    <button onclick="toggleContent()">More About Moab!</button>
+
+    <div id="extraContent" style="display:none;">
+        <p>
+            The Moab isn't just known for sightseeing — it's one of the biggest adventure hubs in the Southwest.
+            From whitewater rafting on the Colorado River to Jeep safaris and hot-air balloon rides, the activities here
+            are endless. If you're looking for a truly memorable vacation full of excitement, Moab is the perfect place.
+        </p>
+
+        <img src="https://media.oars.com/wp-content/uploads/2024/08/19173645/MAS1-1536x1024.jpg"
+             alt="River Rafting in Moab"
+             style="width:100%; border-radius:10px;">
+    </div>
+
+</div>
+
+<script>
+    function toggleContent() {
+        const section = document.getElementById("extraContent");
+        section.style.display = section.style.display === "none" ? "block" : "none";
+    }
+
+    const hoverImg = document.getElementById("hoverImg");
+
+    const originalSrc = "https://www.moabspringsranch.com/Content/images/Canyonlandspark.jpg";
+    const hoverSrc = "https://www.ulumresorts.com/app/uploads/2024/01/shutterstock_1164019927-1920x1080.jpg";
+
+    hoverImg.addEventListener("mouseenter", () => {
+        hoverImg.src = hoverSrc;
+    });
+
+    hoverImg.addEventListener("mouseleave", () => {
+        hoverImg.src = originalSrc;
+    });
+</script>
+
+</body>
 </html>
-
 
 
